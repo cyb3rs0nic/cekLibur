@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta content="GIF to MP4 Converter" name="description">
+  <link href="https://getbootstrap.com/docs/3.3/favicon.ico" rel="icon">
+  <title>Indonesian Holiday Checker</title><!-- Bootstrap core CSS -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+  <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/global/plugins/bootstrap-sweetalert/sweetalert.css" rel="stylesheet" type="text/css" />
+  <link href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css"><!-- Bootstrap theme -->
+  <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap-theme.min.css" rel="stylesheet"><!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="https://getbootstrap.com/docs/3.3/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"><!-- Custom styles for this template -->
+  <link href="https://getbootstrap.com/docs/3.3/examples/theme/theme.css" rel="stylesheet"><!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="https://getbootstrap.com/docs/3.3/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <script src="https://getbootstrap.com/docs/3.3/assets/js/ie-emulation-modes-warning.js">
+  </script><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Indonesian Holiday Checker</a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav"></ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="container theme-showcase" role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <form id="check_date" class="form-horizontal">
+      <legend>Form Indonesian Holiday Checker</legend>
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="date">Date</label>
+        <div class="col-sm-3">
+          <input class="form-control form-control-inline input-medium date-picker" size="16" type="text" value="" placeholder="Enter the date you want to check" readonly name="date" id="date" data-date-format="yyyy-mm-dd" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button class="btn btn-default" type="submit">Check Date</button>
+        </div>
+      </div>
+    </form>
+  </div><!-- /container -->
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+  </script> 
+  <script>
+    window.jQuery || document.write('<script src="https://getbootstrap.com/docs/3.3/assets/js/vendor/jquery.min.js"><\/script>')
+  </script> 
+  <script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js">
+  </script> 
+  <script src="https://getbootstrap.com/docs/3.3/assets/js/docs.min.js">
+  </script> <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://getbootstrap.com/docs/3.3/assets/js/ie10-viewport-bug-workaround.js">
+  </script> 
+  <script src="assets/global/plugins/bootstrap-sweetalert/sweetalert.min.js" type="text/javascript"></script>
+  <script src="assets/global/plugins/moment.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/plugins/clockface/js/clockface.js" type="text/javascript">
+  </script> 
+  <script src="assets/global/scripts/app.min.js" type="text/javascript">
+  </script> 
+  <script src="assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript">
+  </script>
+  <script src="assets/pages/scripts/ui-sweetalert.min.js" type="text/javascript"></script>
+  <script src="http://www.datejs.com/build/date.js" type="text/javascript"></script>
+  <script>
+    jQuery(document).ready(function() {
+		$("#check_date").submit(function(){
+			event.preventDefault();
+			var date = $('#date').val();
+			$.getJSON( "check/" + date, function( data ) {
+			var dateString = Date.parse(date).toString("dd MMMM yyyy");
+			  if (data['status'] == 'Libur Nasional'){
+					swal({
+						title: "Holiday In Indonesia",
+						text: dateString + " is " + data['Keterangan'],
+						confirmButtonClass: "btn blue btn-outline sbold",
+						confirmButtonText: "Continue",
+						type: "info"
+					})
+				}
+				else {
+					swal({
+						title: "Not Holiday In Indonesia",
+						text: dateString + " is not national holiday in Indonesia",
+						confirmButtonClass: "btn blue btn-outline sbold",
+						confirmButtonText: "Continue",
+						type: "info"
+					})
+				}
+			});
+			
+		})
+	})
+  </script>
+</body>
+</html>
