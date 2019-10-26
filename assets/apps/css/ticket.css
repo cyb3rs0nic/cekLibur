@@ -27,7 +27,7 @@ Ticket Page
 .app-ticket-details .ticket-id,
 .app-ticket-details .ticket-title {
   display: inline-block;
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 30px; }
 
 .app-ticket-details .ticket-cust a:hover {
