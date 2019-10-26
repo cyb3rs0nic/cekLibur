@@ -10,7 +10,7 @@ Inbox Page
     min-height: 400px; }
   .inbox .inbox-nav {
     margin: 30px 0;
-    padding: 0;
+    padding: 1;
     list-style: none; }
     .inbox .inbox-nav > li {
       padding: 0;
